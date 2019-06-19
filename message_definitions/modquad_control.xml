@@ -1,19 +1,23 @@
 <?xml version="1.0"?>
 <mavlink>
-  <!-- MAVLink standard messages -->
-  <include>common.xml</include>
-  <dialect>0</dialect>
-  <!-- use common.xml enums -->
-  <enums/>
-  <!-- use common.xml messages -->
-  <messages>
-    <message id="388" name="MODQUAD_CONTROL">
+
+    <include>common.xml</include>
+    <!-- <version>9</version> -->
+    <dialect>8</dialect>
+
+    <enums>
+        <!-- Enums are defined here (optional) -->
+    </enums>
+
+    <messages>
+       <message id="388" name="MODQUAD_CONTROL">
       <description>This message should input the position of the individual modules in the modquad structure new referene.</description>
       <field type="uint64_t" name="time_usec" units="us">Timestamp (micros since boot or Unix epoch)</field>
       <field type="uint8_t" name="modquad_control_flag">The flag indicating the control method in the firmware</field>
       <field type="float[4]" name="modquad_control_coeffs">The control coefficients for the four rotors once enabling the modquad control</field>
       <field type="float" name="x" units="m">X position in meters (In Structure frame)</field>
       <field type="float" name="y" units="m">Y position in meters (In Structure frame)</field>
-    </message>
-  </messages>
+       </message> 
+    </messages>
+
 </mavlink>

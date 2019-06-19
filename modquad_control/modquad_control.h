@@ -1,13 +1,13 @@
 /** @file
- *  @brief MAVLink comm protocol generated from standard.xml
+ *  @brief MAVLink comm protocol generated from modquad_control.xml
  *  @see http://mavlink.org
  */
 #pragma once
-#ifndef MAVLINK_STANDARD_H
-#define MAVLINK_STANDARD_H
+#ifndef MAVLINK_MODQUAD_CONTROL_H
+#define MAVLINK_MODQUAD_CONTROL_H
 
 #ifndef MAVLINK_H
-    #error Wrong include order: MAVLINK_STANDARD.H MUST NOT BE DIRECTLY USED. Include mavlink.h from the same directory instead or set ALL AND EVERY defines from MAVLINK.H manually accordingly, including the #define MAVLINK_H call.
+    #error Wrong include order: MAVLINK_MODQUAD_CONTROL.H MUST NOT BE DIRECTLY USED. Include mavlink.h from the same directory instead or set ALL AND EVERY defines from MAVLINK.H manually accordingly, including the #define MAVLINK_H call.
 #endif
 
 #undef MAVLINK_THIS_XML_IDX
@@ -29,7 +29,7 @@ extern "C" {
 
 #include "../protocol.h"
 
-#define MAVLINK_ENABLED_STANDARD
+#define MAVLINK_ENABLED_MODQUAD_CONTROL
 
 // ENUM DEFINITIONS
 
@@ -66,4 +66,4 @@ extern "C" {
 #ifdef __cplusplus
 }
 #endif // __cplusplus
-#endif // MAVLINK_STANDARD_H
+#endif // MAVLINK_MODQUAD_CONTROL_H
